@@ -1,6 +1,20 @@
 
 <template>
   <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div class="mb-8 border-l-4 border-red-600 pl-4 shadow-md">
+        <p class="text-md text-gray-600 leading-relaxed">
+          <strong>Avertissement:</strong> Ce projet est un <strong>simulateur TRES 
+          simplifié</strong>, destiné uniquement à donner une <strong>idée générale</strong> du 
+          fonctionnement des tranches d’imposition en France. Il ne prend en compte <strong>aucune 
+          situation fiscale particulière</strong> : il s'applique uniquement à une <strong>situation
+          standard avec une seule part fiscale</strong> et un revenu <strong>suffisamment éloigné du
+          seuil d'entrée de la première tranche</strong>.  Les <strong>mécanismes de réduction d’impôt</strong> 
+          (comme la décote, plafonnement, quotient familial ou crédits) <strong>ne sont pas pris en
+          compte</strong>. Malgré le soin apporté à son élaboration, <strong>des erreurs ou 
+          imprécisions peuvent subsister</strong>.
+        </p>
+        <p class="text-lg text-red-600">Ce simulateur ne remplace pas une simulation officielle ni un avis fiscal personnalisé.</p>
+    </div>
     <form @submit.prevent="computeTaxes" class="bg-white shadow rounded-lg px-6 py-8 mb-4">
       <div class="mb-4">
         <label for="rev_net" class="block text-sm font-medium text-gray-700">Revenu annuel net imposable (€)</label>
